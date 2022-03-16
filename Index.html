@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CYBERPUNK2077 Info´s</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+/*Diese Website dient den Infos über mein Lieblingsspiel CYBERPUNK2077.
+ Ich habe dieses Thema ausgesucht da ich von diesem spiel unfassbar überzeugt bin und immer gerne über dieses rede.
+*/ 
+
+
+
+
+
+
+
+  /*mit body,h1,h2 etc. kann ich nun die schrift art festlegen sowie darunter die höhe,farbe und hintergrundfarbe*/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  font-size: large;
+  height: 100%;
+  color: rgb(212, 201, 97);
+  line-height: 1.8;
+  background-color: black;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*Hier oben habe ich einfach ein schönes scroll feature eingebaut 
+  welches einfach besser aussieht. Normalerweise, springt
+  das bild beim klick auf
+  die navbar einfach auf den gewünschten bereich 
+  aber mit diesem befehlt scrollt er smooth zum gwünschten bereich.*/
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* nightcity gif für den Hintergund dazu einfach background-image: url("") verwenden*/
+.bgimg-1 {
+  background-image: url("nightcity.gif");
+  min-height: 100%;
+
+}
+
+/* cyberpunk gif für den Hintergund dazu einfach background-image: url("") verwenden*/
+.bgimg-2 {
+  background-image: url("Cybergif.gif");
+  min-height: 400px;
+}
+
+/* Samurai gif für den Hintergund dazu einfach background-image: url("") verwenden*/
+.bgimg-3 {
+  background-image: url("Samurai.gif");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/*mit @media lässt das Rendern von Inhalten an unterschiedliche Bedingungen wie die Bildschirmauflösung anpassen. ich habe hier die maximale geräte größe auf 1600px gestellt.*/
+@media only screen and (max-device-width: 1600px) {
+
+  /*Hier habe ich alle bilder per background-attachment: scroll so geschaltet, das der hintergund realtiv zum element bleibt. somit sieht das scrollen schöner aus da das bild mitscrollt.*/
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+ 
+
+
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+
+    <!--Mit w3-bar kann man eine horizontale leiste bilden welche für eine navbar super geeignet ist-->
+   
+    <!-- Hier habe ich eine navbar welche mir ermöglicht 
+    mich per one click in die verschiedenen abteile meiner seite zu navigieren-->
+
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#nightcity" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> Nightcity</a>
+    <a href="#cyberpunkbild" class="w3-bar-item w3-button w3-hide-small"><i class=""></i>Cyberpunk2077</a>
+    <a href="#Samuraibild" class="w3-bar-item w3-button w3-hide-small"><i class=""></i> Samurai</a>
+  
+    </a>
+  </div>
+
+ 
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#nightcity" class="w3-bar-item w3-button" onclick="toggleFunction()">Nightcity</a>
+    <a href="#cyberpunkbild" class="w3-bar-item w3-button" onclick="toggleFunction()">Cyberpunk2077</a>
+    <a href="#Samuraibild" class="w3-bar-item w3-button" onclick="toggleFunction()">Samurai</a>
+    
+  </div>
+</div>
+
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"> <img src="Bild.png" alt=""></span></span> 
+  
+    <!-- Hier habe ich statt einer schrift als logo ganz einfach ein transparentes
+         logo eingesetzt welches ich zentral gesetzt habe um dem ganzen noch einmal einen neuen flair zu geben-->
+
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="nightcity">
+  <h3 class="w3-center">Nightcity</h3>
+  <p class="w3-center"><em>Was ist Nightcity?</em></p>
+   <p> 
+     
+    Gegründet wurde das Städtchen nämlich Anfang der 1990er durch Richard Night,
+    einen Unternehmer, der hier das Ideal einer Stadt verwirklichen wollte:
+    einen goldenen Hafen in stürmischen Zeiten, in denen Menschen glücklich, zufrieden und erfolgreich zusammenleben.
+  
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!--Hier habe ich den ersten info text eingefügt und dies mit der id=nightcity passend gesetzt-->
+        
+    </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      
+      <p>
+
+        Zur Einordnung: Night City ist sowohl in der Pen&Paper-Vorlage als auch in Cyberpunk 2077
+        die Spielwiese der Akteure. Die Stadt liegt innerhalb des Story-Universums zwischen San 
+        Francisco und Los Angeles, also an der US-amerikanischen Westküste in der sogenannten Coronado Bay.
+        Deshalb hieß sie ursprünglich auch Coronado City - die Namensänderung ist mit tragischen Ereignissen verbunden.
+        Gegründet wurde das Städtchen nämlich Anfang der 1990er durch Richard Night,
+        einen Unternehmer, der hier das Ideal einer Stadt verwirklichen wollte:
+        einen goldenen Hafen in stürmischen Zeiten, in denen Menschen glücklich, zufrieden und erfolgreich zusammenleben.
+
+        <br>
+        <br>
+        <br>
+      
+      </p>
+      
+    </div>
+
+
+
+
+    <div class="w3-content w3-container w3-padding-64" id="Trailer">
+      <h3 class="w3-center">Trailer</h3>
+      <p class="w3-center"><em>Der Trailer</em></p>
+
+      <p>
+
+        <iframe width="930" height="515" src="https://www.youtube.com/embed/8X2kIfS6fb8" 
+        title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write;
+         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </p>
+  
+  <p class="w3-large w3-center w3-padding-16">Positive sowie Negative Bewertungen und Spielstunden</p> 
+  <p class="w3-wide"><i class="fa fa-arrow-up"></i>Positive Bewertungen</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-green w3-center" style="width:86%">86%</div> <!-- Hier habe ich eine art
+    bewertungs bar erstellt welche ich dann grün sowie rot gefärbt habe um positive und negative bewertungen festzulegen-->
+  </div>
+  <p class="w3-wide"><i class="fa fa-arrow-down"></i>Negative Bewertungen</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-red w3-center" style="width:14%">14%</div>
+<!-- Hier habe ich eine art
+    bewertungs bar erstellt welche ich dann grün sowie rot gefärbt habe um positive und negative bewertungen festzulegen. ebenso habe ich
+  den befehlt <i class= "fa fa-..."benutzt um ein kleines icon zu benutzen welches passt.-->
+
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Spielstunden</p>
+  <div class="w3-light-grey">
+
+    
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">600,000,000</span><br>
+    Stunden aller Spieler zusammen
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">97,5</span><br>
+    Spielzeit zum durchspielen in Stunden
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">6,360,000</span><br>
+    Stunden aller Spieler im Character Menü
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">17,5</span><br>
+    Zeit um die Hauptstory durchzuspielen in Stunden
+  </div>
+</div>
+
+
+<div class="bgimg-2 w3-display-container" id="cyberpunkbild">
+  <div class="w3-display-middle">
+    
+    <span class="w3-xxxlarge w3-wide;" ><img src="logoanders.png"></span>
+
+<!--Hier habe ich einfach ein bild anstatt eines texts im bild selbst eingefügt.
+    Ins bild habe ich dies bekommen das ich
+    class="bgimg-2" in die div class hineingepackt habe-->
+
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="">
+  <h3 class="w3-center">Cyberpunk2077</h3>
+  <p class="w3-center"><em>
+
+
+
+        Cyberpunk 2077 ist ein Open-World-Action-Adventure,
+        das in Night City spielt – einer Megalopolis, deren Bewohner von Macht,
+        Glamour und Körpermodifikationen besessen sind. Du schlüpfst in die Rolle von V,
+        einem gesetzlosen Söldner auf der Suche nach einem einzigartigen Implantat – dem Schlüssel zur Unsterblichkeit.</em></p><br>
+
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="bgimg-3 w3-display-container" id="Samuraibild">
+  <div class="w3-display-middle">
+     <span class="w3-xxxlarge w3-wide"><img src="unterer.png.opdownload"></span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="Samurai">
+  <h3 class="w3-center">Was sind die Samurai in Cyberpunk2077</h3>
+  <p class="w3-center"><em>
+          Samurai ist der Name einer berühmten Rockband. Die Musik war für sie eine Art Rebellion;
+          sie war ihre Art, einen Kampf gegen das System auszufechten. In dem Trailer zu dem kommenden Videospiel Cyberpunk 2077
+          kann man einen jungen Mann sehen, auf dessen Jacke der Bandname Samurai steht.
+          Als Hauptstar von Samurai tritt Johnny Silverhand auf,
+          welcher von niemand anderen als Keanu Reeves gespielt wird. Keanu Reeves hat in Cyberpunk2077
+          eine sehr große rolle und begleitet den character auf der Reise durch Nightcity.</em></p>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="keanu.gif" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Warschau, Poland<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email : ir@cdprojekt.com<br>
+      </div>
+      <p>Fragen zu Cyberpunk2077? <i class=""></i><br> Hier kannst du deine Frage am uns leiten.</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input  class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Nachricht senden.
+          
+          
+
+<!-- Hier habe ich ganz einfach eine art frage system, welches mit einer input box und placeholdern zustande kamen.-->
+
+
+
+
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-yellow"><i class="fa fa-arrow-up w3-margin-right"></i>Zur Startseite</a>
+  <div class="w3-xlarge w3-section">
+
+    <!-- Hier habe ich in meinen footer einen back to home Button erstellt welcher mit dem href zur startseite verbunden ist.-->
+    
+    
+  </div>
+  <p>Alle Rechte dieser seite gehören Cyberpunk2077 <a href="https://www.cyberpunk.net/de/de/" title="Cyberpunk.net" target="_blank" class="w3-hover-text-green">Cyberpunk.net</a></p>
+
+  <!-- Hier habe ich am schluss noch eine art Rechte sicherung eingebaut
+     und eine verlinkung eingesetzt welche zur Deutschen website von Cyberpunk führt-->
+
+     <audio id="audio_with_controls" controls src="cyberpunk-2077-music.mp3" type="audio/mp3"></audio>
+     <!--Hier habe ich einen ganz einfachen und simplen audio player eingebaut welcher dem user die möglichkeit gibt, den titelsong von cyberpunk abzuspielen-->
+
+</footer>
+</body>
+</html>
